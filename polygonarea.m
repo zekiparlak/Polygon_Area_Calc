@@ -22,12 +22,6 @@ y(size(t,1) + 1) = y(1);
 counter_monte = 0;
 N = 10**4;
 
-rand_x(1) = min(x) + (max(x) - min(x))*rand();
-rand_y(1) = min(y) + (max(y) - min(y))*rand();
-rand_x(2) = rand_x(1) + (max(x) - min(x));
-rand_y(2) = rand_y(1);
-count = 0;
-
 for m=1:N
     rand_x(1) = min(x) + (max(x) - min(x))*rand();
     rand_y(1) = min(y) + (max(y) - min(y))*rand();
